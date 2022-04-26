@@ -15,17 +15,7 @@ window.addEventListener('load', function() {
     };
 
     
-    let y=200;
-    let xy=150;
-    let Rectangle= Path.Rectangle([40, y], [400, y]);
-
-    //長方形
-    Path.Rectangle([40, y], [400, y]);
-    Path.Rectangle([90,xy],[300,xy]);
-    // //［］のカッコは、配列を意味する。
-    // //正円
-     Path.Circle([80,400],80);
-     Path.Circle([400,400],80);
+    
 
      
     

@@ -1,5 +1,5 @@
 // ここにスケッチ名を指定することができる。
-let sketchName = '四角';
+let sketchName = '模様';
 
 // ロードが完了した時に実行する関数。ここで初期化の処理を書く。
 // P5.jsやProcessingのsetupと同じ役割。
@@ -8,27 +8,69 @@ window.addEventListener('load', function() {
     view.viewSize = new Size(500, 500);
 
 
+//背景
     project.currentStyle = {
-        strokeColor: null, // 線の色
-        fillColor: '#6d7999', // 塗りの色
+        strokeColor: '#d4201f', // 線の色
+        fillColor: '#f9e114', // 塗りの色
         strokeWidth: 1 // 線の幅
+        
     };
+    Path.Rectangle([0,0],[500,500]);
+
+    let x=0;
+    while(x < 500);{
+      Path.Circle([x,10],10);
+      Path.Circle([x,20],10);
+    }
+    
+
+
 
     
-    let y=200;
-    let xy=150;
-    let Rectangle= Path.Rectangle([40, y], [400, y]);
+    
+    
 
-    //長方形
-    Path.Rectangle([40, y], [400, y]);
-    Path.Rectangle([90,xy],[300,xy]);
-    // //［］のカッコは、配列を意味する。
-    // //正円
-     Path.Circle([80,400],80);
-     Path.Circle([400,400],80);
+       
+     
+      
+
+
+
+
+    
+
+   
+
+
+    
+   
+   
 
      
+
+
+
+  
+
     
+
+   
+
+     
+
+     
+
+
+
+
+   
+   
+
+   
+
+
+
+
 
     // 画面を描く。
     view.draw();
