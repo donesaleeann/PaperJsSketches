@@ -9,7 +9,7 @@ window.addEventListener('load', function() {
 
 
     project.currentStyle = {
-        strokeColor: '#000000', // 線の色
+        strokeColor: '#ffffff', // 線の色
         fillColor: '#006d77', // 塗りの色
         strokeWidth: 1// 線の幅
     };
@@ -20,7 +20,7 @@ window.addEventListener('load', function() {
     let count = 500;
     let lenght = 10;
     let angle = 5 * 5;
-    let theta = 50 ;
+    let theta = 500 ;
 
     
 

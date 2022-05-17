@@ -9,9 +9,9 @@ window.addEventListener('load', function() {
 
 
     project.currentStyle = {
-        strokeColor: '#ffbe0b', // 線の色
+        strokeColor: '#4f772d', // 線の色
         fillColor: null, // 塗りの色
-        strokeWidth: 3, // 線の幅
+        strokeWidth: 2, // 線の幅
     };
    
 
