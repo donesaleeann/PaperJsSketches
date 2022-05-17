@@ -1,6 +1,5 @@
 // ここにスケッチ名を指定することができる。
-let sketchName = '花';
-
+let sketchName = '形';
 
 // ロードが完了した時に実行する関数。ここで初期化の処理を書く。
 // P5.jsやProcessingのsetupと同じ役割。
@@ -10,39 +9,29 @@ window.addEventListener('load', function() {
 
 
     project.currentStyle = {
-        strokeColor: null, // 線の色
-        fillColor: '#e26d5c', // 塗りの色
-        strokeWidth: 1 // 線の幅
+        strokeColor: '#000000', // 線の色
+        fillColor: null, // 塗りの色
+        strokeWidth: 1// 線の幅
     };
 
-    let x = view.viewSize.width * 0.5;
-    let y = view.viewSize.height * 0.5;
+    let x = view.viewSize.width * 0.6;
+    let y = view.viewSize.height * 0.4;
 
-    let count =100;
-    let lenght = 50;
-    let angle =40;
-    let theta = 0;
+    let count =500;
+    let lenght = 20;
+    let angle =10;
+    let theta = 10;
    
   
 
 
     for (let i = 0; i < count; i++){
-        let p = Path.Circle([x , y + lenght],60);
-    p.rotate(theta, [x , y ]);
+        let p = Path.Circle([x , y + lenght],500);
+    p.rotate(theta, [x + 20 , y + 7]);
     theta += angle;
-    lenght += 1;
+    lenght += 10;
 
 }
- 
-let circle = Path.Circle([250,250 + 2],70);
- circle.fillColor = new Color('#ffe1a8');
-
-
-
-
-
- 
-    
     
 
      

@@ -33,7 +33,9 @@ for (let x =0; x < 500; x +=50){
 
 for (let i =0; i < 500; i +=60){
     for (let j =0; j < 500; j +=60){
-    let rectangle = Path.Rectangle([i,j],20); 
+    
+     Path.Rectangle([i + rand_x, j + rand_y],pickRandom(size)); 
+    
     }
 }
     // 画面を描く。
