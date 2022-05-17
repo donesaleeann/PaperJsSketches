@@ -20,7 +20,7 @@ window.addEventListener('load', function() {
     let count = 400;
     let lenght = 10;
     let angle = 5 * 5;
-    let theta = 100 ;
+    let theta = 100- 50 ;
 
     
 

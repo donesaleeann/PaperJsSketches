@@ -9,7 +9,7 @@ window.addEventListener('load', function() {
 
 
     project.currentStyle = {
-        strokeColor: null, // 線の色
+        strokeColor: '#000000', // 線の色
         fillColor: '#006d77', // 塗りの色
         strokeWidth: 1// 線の幅
     };
@@ -28,10 +28,10 @@ window.addEventListener('load', function() {
         let p = Path.Rectangle([x + lenght, y],20);
         p.rotate(theta,[x,y]);
         theta += angle;
-        lenght +=0.6; 
+        lenght +=0.5; 
     }
     
-    let circle = Path.Circle([250,250],50);
+    let circle = Path.Circle([250,250],40);
     circle.fillColor = new Color('#ffffff');
 
      
