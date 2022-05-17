@@ -1,5 +1,5 @@
 // ここにスケッチ名を指定することができる。
-let sketchName = 'なんか2';
+let sketchName = '途中';
 
 // ロードが完了した時に実行する関数。ここで初期化の処理を書く。
 // P5.jsやProcessingのsetupと同じ役割。
@@ -9,8 +9,8 @@ window.addEventListener('load', function() {
 
 
     project.currentStyle = {
-        strokeColor: null, // 線の色
-        fillColor: '#006d77', // 塗りの色
+        strokeColor: '#000000', // 線の色
+        fillColor: null, // 塗りの色
         strokeWidth: 1// 線の幅
     };
 
@@ -20,7 +20,7 @@ window.addEventListener('load', function() {
     let count = 400;
     let lenght = 10;
     let angle = 5 * 5;
-    let theta = 50 ;
+    let theta = 100 ;
 
     
 
@@ -31,8 +31,7 @@ window.addEventListener('load', function() {
         lenght +=0.6; 
     }
     
-    let circle = Path.Circle([250,250],100);
-    circle.fillColor = new Color('#ffffff');
+   
 
      
     
