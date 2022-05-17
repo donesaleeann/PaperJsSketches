@@ -11,14 +11,14 @@ window.addEventListener('load', function() {
     project.currentStyle = {
         strokeColor: '#4f772d', // 線の色
         fillColor: null, // 塗りの色
-        strokeWidth: 2, // 線の幅
+        strokeWidth: 1, // 線の幅
     };
    
 
     let x = view.viewSize.width * 0.5;
     let y = view.viewSize.height * 0.5;
 
-    let count =500;
+    let count =200;
     let lenght = 50;
     let angle = 20;
     let theta = 10;

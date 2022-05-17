@@ -9,20 +9,18 @@ window.addEventListener('load', function() {
 
 
     project.currentStyle = {
-        strokeColor: '#000000', // 線の色
-        fillColor: null, // 塗りの色
+        strokeColor: null, // 線の色
+        fillColor: '#52796f', // 塗りの色
         strokeWidth: 1// 線の幅
     };
-
     let x = view.viewSize.width * 0.5;
     let y = view.viewSize.height * 0.5;
 
-    let count = 400;
+    let count = 300;
     let lenght = 10;
-    let angle = 5 * 5;
-    let theta = 100 - 50 ;
+    let angle =  5;
+    let theta = 100  ;
 
-    
 
     for (let i =0; i < count; i++){
         let p = Path.Rectangle([x + lenght, y],20);
@@ -30,9 +28,20 @@ window.addEventListener('load', function() {
         theta += angle;
         lenght +=0.6; 
     }
-    
-   
 
+    for (let i =0; i < count; i +=60 ){
+        for(let j =0; j < count; j +=70 ){
+          let rectangle =Path.Rectangle([x + lenght,y],10);
+          rectangle.rotate(theta,[x,y])
+          theta += angle;
+          lenght +=0.4;
+     rectangle.fillColor = new Color('#9a031e');
+      }
+    }
+
+    
+    
+    
      
     
 

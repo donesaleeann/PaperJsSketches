@@ -17,6 +17,9 @@ window.addEventListener('load', function() {
     let x = view.viewSize.width * 0.6;
     let y = view.viewSize.height * 0.4;
 
+    let x2 = view.viewSize.width * 0.5;
+    let y2 = view.viewSize.width * 0.5;
+
     let count =500;
     let lenght = 20;
     let angle =10;
@@ -28,6 +31,7 @@ window.addEventListener('load', function() {
     for (let i = 0; i < count; i++){
         let p = Path.Circle([x , y + lenght],500);
     p.rotate(theta, [x + 20 , y + 7]);
+    p.rotate(-45,[x2,y2]);
     theta += angle;
     lenght += 10;
 
