@@ -17,7 +17,7 @@ window.addEventListener('load', function() {
     let x = view.viewSize.width * 0.5;
     let y = view.viewSize.height * 0.5;
 
-    let count = 400;
+    let count = 500;
     let lenght = 10;
     let angle = 5 * 5;
     let theta = 50 ;
@@ -31,7 +31,7 @@ window.addEventListener('load', function() {
         lenght +=0.6; 
     }
     
-    let circle = Path.Circle([250,250],100);
+    let circle = Path.Circle([250,250],50);
     circle.fillColor = new Color('#ffffff');
 
      
