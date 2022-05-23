@@ -16,6 +16,9 @@ window.addEventListener('load', function() {
     let x = view.viewSize.width * 0.5;
     let y = view.viewSize.height * 0.5;
 
+    let x2 = view.viewSize.width * 0.5;
+    let y2 = view.viewSize.height * 0.5;
+
     let count = 300;
     let lenght = 10;
     let angle =  5;
@@ -25,20 +28,23 @@ window.addEventListener('load', function() {
     for (let i =0; i < count; i++){
         let p = Path.Rectangle([x + lenght, y],20);
         p.rotate(theta,[x,y]);
+        p.rotate(-180,[x2,y2]);
         theta += angle;
         lenght +=0.6; 
     }
 
-    for (let i =0; i < count; i +=60 ){
-        for(let j =0; j < count; j +=70 ){
-          let rectangle =Path.Rectangle([x + lenght,y],10);
-          rectangle.rotate(theta,[x,y])
+    for (let i =0; i < count; i +=100 ){
+        for(let j =0; j < count; j +=100 ){
+          let p =Path.Rectangle([x + lenght,y],10);
+          p.rotate(theta,[x,y])
+          p.rotate(-180,[x2,y2]);
           theta += angle;
           lenght +=0.4;
-     rectangle.fillColor = new Color('#9a031e');
+         p.fillColor = new Color('#9a031e');
       }
     }
 
+   
     
     
     
