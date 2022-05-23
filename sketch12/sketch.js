@@ -10,7 +10,7 @@ window.addEventListener('load', function() {
 
     project.currentStyle = {
         strokeColor: null, // 線の色
-        fillColor: '#006d77', // 塗りの色
+        fillColor: '#ccd5ae', // 塗りの色
         strokeWidth: 1// 線の幅
     };
 
@@ -20,8 +20,8 @@ window.addEventListener('load', function() {
    
 
     let count = 500;
-    let lenght = 10;
-    let angle = 5 * 5;
+    let lenght = 15;
+    let angle = 5 * 7;
     let theta = 300 ;
 
     
@@ -29,25 +29,18 @@ window.addEventListener('load', function() {
     for (let i =0; i < count; i++){
         let p = Path.Rectangle([x + lenght, y],20);
         let p2 =Path.Circle([x + lenght, y],6);
-        let p3 =Path.Rectangle([x, y + lenght],5);
+        let p3 =Path.Rectangle([x, y + lenght],10);
         p.rotate(theta,[x,y]);
         p2.rotate(theta,[x,y]);
-        p3.rotate(theta - 1,[x,y]);
+        p3.rotate(theta - 5,[x,y]);
         theta += angle;
-        lenght +=0.5; 
-        p2.fillColor = new Color('#ffffff');
-        p3.fillColor = new Color('#000000');
+        lenght +=1; 
+        p2.fillColor = new Color('#e9edc9');
+        p3.fillColor = new Color('#ffffff');
     }
-
     
-    
-
-    
-
-    
-    
-    let circle = Path.Circle([250,250],40);
-    circle.fillColor = new Color('#ffffff');
+    let circle = Path.Circle([250,250],35);
+    circle.fillColor = new Color('#e9edc9');
 
      
     
