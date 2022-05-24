@@ -1,5 +1,5 @@
 // ここにスケッチ名を指定することができる。
-let sketchName = '同じ位置';
+let sketchName = 'Rectagleの集合体（静止）';
 
 // ロードが完了した時に実行する関数。ここで初期化の処理を書く。
 // P5.jsやProcessingのsetupと同じ役割。
@@ -14,14 +14,13 @@ window.addEventListener('load', function() {
         strokeWidth: 1// 線の幅
     };
 
-    let randomRange = 10;
+    
 
         for (let y = 0; y < 500; y += 30){
          for (let x = 0; x < 500; x += 40){
-             let rand_x = Math.random() * randomRange - randomRange * 0.5;
-             let rand_y = Math.random() * randomRange - randomRange * 0.5;
-         Path.Rectangle([x + rand_x,y + rand_y],20);
-         Path.Rectangle([x + 5 * rand_x, y + 5 * rand_y],15);
+             
+         Path.Rectangle([x ,y ],20);
+         Path.Rectangle([x + 5 , y + 5 ],10);
          Path.Rectangle([x + 8, y + 8], 5);
        }
       }
