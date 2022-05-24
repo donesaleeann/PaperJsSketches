@@ -22,7 +22,7 @@ window.addEventListener('load', function() {
 
     for (let x = 8; x < view.viewSize.height; x +=20){
       for (let y = 5; y < view.viewSize.height; y +=30){
-        let rand_x = Math.random() * randomRange - randomRange * 1;
+        let rand_x = Math.random() * randomRange - randomRange * 0.8;
         let rand_y = Math.random() * randomRange - randomRange * 0.7;
 
         let count = 100;
