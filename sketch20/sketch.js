@@ -11,17 +11,12 @@ window.addEventListener('load', function() {
     project.currentStyle = {
         strokeColor: null, // 線の色
         fillColor: null, // 塗りの色
-        strokeWidth: 1// 線の幅
+        strokeWidth: 0.5// 線の幅
     };
 
-   
+     let randomRange = 800;
 
-   
-
-    let randomRange = 800;
-    
-
-        for (let y = 0; y < 500; y += 40){
+    for (let y = 0; y < 500; y += 40){
          for (let x = 0; x < 500; x += 40){
              let rand_x = Math.random() * randomRange - randomRange * 0.5;
              let rand_y = Math.random() * randomRange - randomRange * 0.5;
